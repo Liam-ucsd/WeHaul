@@ -1,0 +1,9 @@
+{
+  "name": "We-Haul",
+  "version": "0.0.1",
+  "description": "COGS 120 Winter 2017 Project",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}

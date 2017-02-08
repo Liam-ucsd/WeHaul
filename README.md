@@ -16,6 +16,6 @@ The app will be running through Node and can be run locally by entering
 
 `node app.js`
 
-into your command line.
+into your command line in the app's root directory. A live version of the master branch is also available at https://wehaul.herokuapp.com/
 
 We will be using Angular.js for our interactivity portions and Bootstrap for the styling and layout.

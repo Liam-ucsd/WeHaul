@@ -36,7 +36,7 @@ var database_uri = process.env.MONGOLAB_URI || local_database_uri;
 */
 
 var database_name = 'heroku_wnklw0fh';
-var database_uri = 'mongodb://WeHaul:Bladdy36Balboa@ds113000.mlab.com:13000/' + database_name;
+var database_uri = 'mongodb://WeHaul:wehaulpass@ds113000.mlab.com:13000/' + database_name;
 mongoose.connect(database_uri);
 
 

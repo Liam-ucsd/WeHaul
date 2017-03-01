@@ -1,21 +1,11 @@
-# WeHaul
-COGS 120 Winter 2017
-##Source Control Protocol
-Make a new branch titled dev-"name" using your name. Do your tasks on your branch only.
+#WeHaul
+##COGS 120 Winter 2017
 
-Merge your changes into Master only when you are sure that it works as intended.
+####Git Guidelines
+- Always do feature development on a personal branch (**not** master).
 
-Master should be our "demo" branch: if we need to show off a working version of the app, it will be through Master.
+- When features are bug-free and stable, ask everyone to update their local copy of master by using `git pull` when on the master branch. If they have any un-pushed changes to master, use `git push origin master` after adding all changed files.
 
-Make sure your commit messages are informative! They do not need to list every change involved in a given push, but make sure that they list major changes.
+- push your changes to your personal branch, then `git checkout master` and `git merge <your-branch>`
 
-After a push has resolved an item on the dev plan, please update the status of the task accordingly.
-
-##Tech info
-The app will be running through Node and can be run locally by entering
-
-`node app.js`
-
-into your command line in the app's root directory. A live version of the master branch is also available at https://wehaul.herokuapp.com/
-
-We will be using Angular.js for our interactivity portions and Bootstrap for the styling and layout.
+- finally, push the merge using `git push origin master`.

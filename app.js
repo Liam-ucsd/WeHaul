@@ -31,7 +31,8 @@ var nowDrive = require('./routes/nowDrive');
 //DB CONNECTION
 var local_database_name = 'WeHaul';
 var local_database_uri  = 'mongodb://localhost/' + local_database_name;
-var database_uri = process.env.MONGOLAB_URI || local_database_uri;
+//var database_uri = process.env.MONGOLAB_URI || local_database_uri;
+var database_uri = "mongodb://heroku_wnklw0fh:Bladdy36Balboa@ds113000.mlab.com:13000/heroku_wnklw0fh"
 mongoose.connect(database_uri);
 
 

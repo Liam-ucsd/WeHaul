@@ -1,4 +1,7 @@
 /**
+ * Created by Liam on 3/2/2017.
+ */
+/**
  * Created by Liam on 2/16/2017.
  */
 'use strict';
@@ -32,7 +35,7 @@ function moveNow(e) {
     e.preventDefault();
 
     if(rider === true) {
-        window.location.href = "vehicle";
+        window.location.href = "designB";
     } else if(rider === false) {
         window.location.href = "movenow-driver";
     }

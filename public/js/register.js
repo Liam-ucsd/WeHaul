@@ -2,8 +2,6 @@
  * Created by Liam on 2/22/2017.
  */
 'use strict';
-var username = "test";
-var password = "password";
 $(document).ready(function() {
     initPage();
 });

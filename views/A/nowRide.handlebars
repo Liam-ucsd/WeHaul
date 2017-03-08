@@ -1,0 +1,78 @@
+<html>
+<head>
+    <title>WeHaul Test</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" href="css/customizations.css">
+    <link rel="stylesheet" href="css/nowRide.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+</head>
+<body>
+    <!--NAVBAR CODE-->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a href="" class="navbar-brand dropdown-toggle" data-toggle="dropdown" role="button" id="omni">☰</a>
+                <ul class="dropdown-menu">
+                    <li><a href="home">Home</a></li>
+                    <li><a href="settings">Account Settings</a></li>
+                    <li><a href="help">Help &amp; FAQ</a></li>
+                    <li><a href="history">History</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="/">Logout</a></li>
+                </ul>
+            </div>
+            <div class="nav navbar-nav" style = "position: relative;">
+                <img src="graphics/wehaul-logo.jpg" style="width: 20%;" align="left">
+            </div>
+        </div>
+    </nav>
+
+    <div class="background">
+
+        <ul class="breadcrumb">
+            <li>Rider/Driver</li>
+
+            <li>Select Vehicle</li>
+            <li>Request Extra Equipment</li>
+            <li><b>Request Ride</b></li>
+        </ul>
+
+    <div class="container">
+        <span id="name" style="visibility: hidden">{{name}}</span>
+        <span id="vehicle" style="visibility: hidden">{{vehicle}}</span>
+        <span id="bigBox" style="visibility: hidden">{{bigBox}}</span>
+        <span id="smallBox" style="visibility: hidden">{{smallBox}}</span>
+        <span id="tape" style="visibility: hidden">{{tape}}</span>
+        <span id="twine" style="visibility: hidden">{{twine}}</span>
+        <span id="bubbleWrap" style="visibility: hidden">{{bubbleWrap}}</span>
+        <span id="tarp" style="visibility: hidden">{{tarp}}</span>
+
+        <form id="addRideForm" role="form">
+            <h3 style = "color: #66a182;">Request a Ride</h3>
+            <div class="form-group">
+                <label for="location" style = "color: #09a129;">Location:</label>
+                <input type="text" class="form-control" id="location" placeholder="Location" name="location">
+            </div>
+            <div class="form-group">
+                <label for="destination" style = "color: #09a129;">Destination:</label>
+                <input type="text" class="form-control" id="destination" placeholder="Destination" name="destination">
+            </div>
+            <input type="submit" id="submitBtn" class="btn btn-default" style = "color: #66a182"; value="Request Ride"></input>
+        </form>
+    </div>
+</div>
+
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/newRide.js"></script>
+    <script>
+        if(localStorage.getItem("currentUser") == null) {
+            window.location.href = "/"
+        }
+    </script>
+</body>
+</html>

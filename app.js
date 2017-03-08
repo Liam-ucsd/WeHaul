@@ -39,7 +39,7 @@ mongoose.connect(database_uri);
 */
 //Heroku connection
  var database_name = 'heroku_nk6m8tcs';
- var database_uri = 'mongodb://WeHaul:password@@ds123050.mlab.com:23050/' + database_name;
+ var database_uri = 'mongodb://WeHaul:password@ds123050.mlab.com:23050/' + database_name;
  mongoose.connect(database_uri);
 
 

@@ -40,11 +40,7 @@ function loggedIn(data) {
             localStorage.removeItem("email");
         }
         localStorage.setItem("currentUser", data);
-        if($("#designB").is(":checked")) {
-            window.location.href = "homeb";
-        } else {
-            window.location.href = "home";
-        }
+        window.location.href = "home";
     }
 }
 
@@ -60,4 +56,13 @@ function ensureLogout() {
     if(localStorage.getItem("currentUser") != null) {
         localStorage.removeItem("currentUser");
     }
+    if(localStorage.getItem("currentReq") != null) {
+        $.post("movenow-delete", {
+            "id": localStorage.getItem("currentReq")
+        }, deletedServerside);
+    }
+}
+
+function deletedServerside(data) {
+    localStorage.removeItem("currentReq");
 }

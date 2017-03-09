@@ -60,7 +60,7 @@
 
 #subtitle{
     color: #66a182;
-    margin: 25px;
+    margin: 10px;
 }
 
 .options {
@@ -69,5 +69,8 @@
 }
 
 #text{
+    color:#66a182;
+}
+#time{
     color:#66a182;
 }

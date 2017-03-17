@@ -37,10 +37,9 @@ var local_database_uri  = 'mongodb://localhost/' + local_database_name;
 var database_uri = process.env.MONGOLAB_URI || local_database_uri;
 mongoose.connect(database_uri);
 */
-
 //Heroku connection
- var database_name = 'heroku_nk6m8tcs';
- var database_uri = 'mongodb://WeHaul:password@ds123050.mlab.com:23050/' + database_name;
+ var database_name = 'heroku_qtkmcsfj';
+ var database_uri = 'mongodb://WeHaul:password@ds133340.mlab.com:33340/' + database_name;
  mongoose.connect(database_uri);
 
 
@@ -110,6 +109,7 @@ app.post('/movenow-delete', nowRide.deleteRide);
 
 
 //Design B gets and posts
+/*
 app.get('/B', desB.login);
 app.get('/registerB', desB.register);
 app.post('/registerB', desB.createUser);
@@ -121,7 +121,7 @@ app.get('/pickupB', desB.pickup);
 
 app.get('/settingsB', desB.settings);
 app.get('/historyB', desB.history);
-app.get('/helpB', desB.help);
+app.get('/helpB', desB.help);*/
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
